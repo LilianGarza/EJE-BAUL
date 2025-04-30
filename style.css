@@ -1,0 +1,69 @@
+body {
+    background-image: url('ASSETS/los4.gif');
+    background-size: cover;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: #357285;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.imagen-boton {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.imagen-boton:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen-boton {
+        width: 80%;
+        height: auto;
+    }
+}
+
+.imagen-boton-container {
+    text-align: center;
+}
+
+.nombre {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+
